@@ -12,7 +12,7 @@ html {
 body {
 	font-family: sans-serif;
 	font-size: 14px;
-	
+
 }
 
 /* ---------------------------------------------------- */
@@ -24,6 +24,10 @@ Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
 
+h1 {
+	text-align: center;
+}
+
 .container {
 	margin: auto;
 }
@@ -31,6 +35,7 @@ PC      960px a víc
 .kontakty {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 
 
 }
@@ -47,8 +52,6 @@ PC      960px a víc
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 	padding: 15px;
 	align-items: center;
-	margin: 10px;
-	
 }
 
 .card img {
@@ -61,35 +64,34 @@ PC      960px a víc
 }
 
 @media (min-width: 540px) {
-.kontakty{
-	flex-direction: row;
-	flex-wrap: wrap;
-
-}
+	.kontakty {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
 	.person {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		flex: 1 1 calc((100% - 40px) / 2);
-	
-
 	}
 
 	.person-text {
 		text-align: left;
 		padding-left: 20px;
-
 	}
 }
 
 @media (min-width:960px) {
-	.kontakty{
+	.kontakty {
 		flex-wrap: nowrap;
 	}
-	.person{
+
+	.person {
 		flex-direction: column;
 	}
-	
+	.person-text {
+		text-align: center;
+		padding-left: 0;
+	}
 }
 
-/* dodělat gap mezi nima, cala nefunguje
