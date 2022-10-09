@@ -12,6 +12,7 @@ html {
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	
 }
 
 /* ---------------------------------------------------- */
@@ -46,6 +47,7 @@ PC      960px a víc
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 	padding: 15px;
 	align-items: center;
+	margin: 10px;
 	
 }
 
@@ -62,12 +64,14 @@ PC      960px a víc
 .kontakty{
 	flex-direction: row;
 	flex-wrap: wrap;
+
 }
 
 	.person {
 		flex-direction: row;
 		flex-wrap: nowrap;
-		flex: 1 1 calc((100% - 20px) / 2);
+		flex: 1 1 calc((100% - 40px) / 2);
+	
 
 	}
 
@@ -87,3 +91,5 @@ PC      960px a víc
 	}
 	
 }
+
+/* dodělat gap mezi nima, cala nefunguje
